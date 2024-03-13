@@ -6,6 +6,10 @@ class Information(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
        
+    @nextcord.slash_command(description="Sends a list of bot commands")
+    async def help(self, interaction: Interaction):
+        await interaction.response.send_message("None... as of now ;)")
+       
     @nextcord.slash_command(description="Sends bot latency")
     async def ping(self, interaction: Interaction):
         latency = int(self.bot.latency * 1000)
