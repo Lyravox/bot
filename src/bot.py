@@ -34,6 +34,7 @@ bot = commands.Bot(
 )
 
 bot.load_extension('cogs.info')
+bot.load_extension('cogs.utilites')
 
 @bot.event
 async def on_ready():
