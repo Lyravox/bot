@@ -33,7 +33,7 @@ bot = commands.Bot(
     activity=nextcord.Game(name="in development!")
 )
 
-bot.load_extension('cogs.utilites')
+bot.load_extension('cogs.info')
 
 @bot.event
 async def on_ready():
