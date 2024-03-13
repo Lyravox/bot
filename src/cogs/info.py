@@ -40,10 +40,8 @@ class Information(commands.Cog):
             title=f"{name}'s Avatar:"
         )
         embed.set_image(url=avatar)
-        
+
         await interaction.response.send_message(embed=embed)
-        
-    
         
 def setup(bot):
     bot.add_cog(Information(bot))
